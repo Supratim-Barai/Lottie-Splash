@@ -2,14 +2,14 @@ import React from 'react';
 import {View, StyleSheet} from 'react-native';
 import LottieView from 'lottie-react-native';
 
-const Splash = () => {
+const Splash = ({navigation}) => {
   return (
     <View style={styles.root}>
       <LottieView
         source={require('./assets/splash.json')}
         autoPlay
         loop={false}
-        
+        onAnimationFinish={() => navigation.navigate('Login')}
       />
     </View>
   );

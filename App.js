@@ -1,8 +1,9 @@
 import React from 'react';
-import Splash from './src/Splash';
+import Routes from './src/routes/Routes';
+
 
 const App = () => {
-  return <Splash />;
+  return <Routes />;
 };
 
 export default App;
